@@ -16,3 +16,4 @@ try{
 catch(error){
     console.log('Cant eat');
 }
+console.log('hihi');
