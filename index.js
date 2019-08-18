@@ -1,6 +1,18 @@
 const Dog = require('./Dog');
 const Cat =require('./Cat');
-const tempCat = new Cat('Temp');
-const tempDog = new Dog('Duy');
-tempDog.eat(tempCat);
-console.log(tempDog);
+const Mouse = require('./Mouse');
+
+
+const cat = new Cat('Cat');
+const dog = new Dog('Dog');
+const mouse = new Mouse('Mouse');
+
+try{
+    cat.eat(mouse);
+    console.log(cat);
+    cat.eat(dog);
+    console.log(cat);
+}
+catch(error){
+    console.log('Cant eat');
+}
