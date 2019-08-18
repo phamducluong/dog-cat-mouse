@@ -5,3 +5,4 @@ function Mouse(name,weight){
 Mouse.prototype.sayHello = function(){
     return "Hello every one";
 }
+module.exports = Mouse;
